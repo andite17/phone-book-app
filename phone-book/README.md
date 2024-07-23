@@ -15,4 +15,4 @@ if error you can run via intellij idea
 1. open project in intellij IDEA
 2. wait until success initialize/download dependencies
 3. open tab gradle (logo image elephant) in right side > open phone-book > Task > application > click bootRun
-4. or running with terminal run command ```./gradlew bootRun```
+4. or running with terminal run command ```.\gradlew bootRun```
