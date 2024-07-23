@@ -1,0 +1,61 @@
+CREATE DATABASE phonebook;
+
+-- after create database connect to database phonebook and running script in
+CREATE TABLE public.contact (
+	id int4 NOT NULL,
+	full_name varchar(255) NOT NULL,
+	phone_number varchar(255) NOT NULL,
+	email varchar(255) NULL,
+	address varchar(255) NULL,
+	favorite bool NOT NULL,
+	CONSTRAINT contact_phone_number_key UNIQUE (phone_number),
+	CONSTRAINT contact_pkey PRIMARY KEY (id)
+);
+
+
+-- DUMY DATA
+INSERT INTO Contact (id, full_name , phone_number , email, address, favorite) VALUES
+(1, 'John Doe', '1234567890', 'john.doe1@example.com', '123 Elm Street', true),
+(2, 'Jane Smith', '1234567891', 'jane.smith2@example.com', '456 Oak Avenue', false),
+(3, 'Alice Johnson', '1234567892', 'alice.johnson3@example.com', '789 Pine Road', true),
+(4, 'Bob Brown', '1234567893', 'bob.brown4@example.com', '101 Maple Lane', false),
+(5, 'Charlie Davis', '1234567894', 'charlie.davis5@example.com', '202 Birch Boulevard', true),
+(6, 'Daniel White', '1234567895', 'daniel.white6@example.com', '303 Cedar Court', false),
+(7, 'Eva Green', '1234567896', 'eva.green7@example.com', '404 Spruce Street', true),
+(8, 'Frank Moore', '1234567897', 'frank.moore8@example.com', '505 Willow Way', false),
+(9, 'Grace Hall', '1234567898', 'grace.hall9@example.com', '606 Fir Drive', true),
+(10, 'Henry Scott', '1234567899', 'henry.scott10@example.com', '707 Hemlock Trail', false),
+(11, 'Isabella Harris', '1234567900', 'isabella.harris11@example.com', '808 Magnolia Place', true),
+(12, 'Jack Lee', '1234567901', 'jack.lee12@example.com', '909 Poplar Street', false),
+(13, 'Karen Walker', '1234567902', 'karen.walker13@example.com', '1010 Dogwood Lane', true),
+(14, 'Liam Young', '1234567903', 'liam.young14@example.com', '1111 Redwood Road', false),
+(15, 'Mia King', '1234567904', 'mia.king15@example.com', '1212 Aspen Circle', true),
+(16, 'Noah Hill', '1234567905', 'noah.hill16@example.com', '1313 Sycamore Way', false),
+(17, 'Olivia Martinez', '1234567906', 'olivia.martinez17@example.com', '1414 Cypress Drive', true),
+(18, 'Paul Robinson', '1234567907', 'paul.robinson18@example.com', '1515 Juniper Street', false),
+(19, 'Quinn Clark', '1234567908', 'quinn.clark19@example.com', '1616 Larch Avenue', true),
+(20, 'Ryan Lewis', '1234567909', 'ryan.lewis20@example.com', '1717 Olive Court', false),
+(21, 'Sophie Allen', '1234567910', 'sophie.allen21@example.com', '1818 Cherry Boulevard', true),
+(22, 'Thomas Young', '1234567911', 'thomas.young22@example.com', '1919 Palm Street', false),
+(23, 'Uma Nelson', '1234567912', 'uma.nelson23@example.com', '2020 Spruce Lane', true),
+(24, 'Victor Wright', '1234567913', 'victor.wright24@example.com', '2121 Elm Road', false),
+(25, 'Wendy Scott', '1234567914', 'wendy.scott25@example.com', '2222 Oak Place', true),
+(26, 'Xander Evans', '1234567915', 'xander.evans26@example.com', '2323 Pine Street', false),
+(27, 'Yara Adams', '1234567916', 'yara.adams27@example.com', '2424 Maple Avenue', true),
+(28, 'Zane Baker', '1234567917', 'zane.baker28@example.com', '2525 Birch Court', false),
+(29, 'Alex Campbell', '1234567918', 'alex.campbell29@example.com', '2626 Cedar Boulevard', true),
+(30, 'Bella Flores', '1234567919', 'bella.flores30@example.com', '2727 Fir Street', false),
+(31, 'Carter Gomez', '1234567920', 'carter.gomez31@example.com', '2828 Willow Lane', true),
+(32, 'Diana Howard', '1234567921', 'diana.howard32@example.com', '2929 Hemlock Road', false),
+(33, 'Ethan Jackson', '1234567922', 'ethan.jackson33@example.com', '3030 Magnolia Place', true),
+(34, 'Fiona Kim', '1234567923', 'fiona.kim34@example.com', '3131 Poplar Street', false),
+(35, 'George Lopez', '1234567924', 'george.lopez35@example.com', '3232 Dogwood Lane', true),
+(36, 'Hannah Martinez', '1234567925', 'hannah.martinez36@example.com', '3333 Redwood Road', false),
+(37, 'Ian Morgan', '1234567926', 'ian.morgan37@example.com', '3434 Aspen Circle', true),
+(38, 'Julia Parker', '1234567927', 'julia.parker38@example.com', '3535 Sycamore Way', false),
+(39, 'Kyle Reed', '1234567928', 'kyle.reed39@example.com', '3636 Cypress Drive', true),
+(40, 'Lily Turner', '1234567929', 'lily.turner40@example.com', '3737 Juniper Street', false),
+(41, 'Mason Walker', '1234567930', 'mason.walker41@example.com', '3838 Larch Avenue', true),
+(42, 'Natalie Young', '1234567931', 'natalie.young42@example.com', '3939 Olive Court', false),
+(43, 'Owen Harris', '1234567932', 'owen.harris43@example.com', '4040 Cherry Boulevard', true),
+(44, 'Piper King', '1234567933', 'piper.king44@example.com', '4141 Palm Street', false);
